@@ -1,4 +1,7 @@
 <svg width="0" height="0" class="hidden">
+  <symbol viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" id="check">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M.171 12c0-6.63 5.351-12 11.958-12 6.6 0 11.957 5.37 11.957 12 0 6.624-5.357 12-11.957 12C5.522 24 .17 18.624.17 12zm3.587 0l5.979 6L20.498 7.2l-1.691-1.698-9.07 9.102-4.287-4.302L3.758 12z" fill="#FF4F4F"></path>
+  </symbol>
   <symbol viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg" id="atlas">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M31.5 25.2c0 .675-.225 1.125-.675 1.35-.225.9-.225 4.05 0 5.175.45.45.675.9.675 1.35V34.2c0 1.125-.9 1.8-1.8 1.8H6.75C2.925 36 0 33.075 0 29.25V6.75C0 2.925 2.925 0 6.75 0H29.7c1.125 0 1.8.675 1.8 1.8v23.4zM14.103 12.375c.187-3.113 1.106-5.01 1.647-5.533.54.524 1.46 2.421 1.648 5.533h-3.295zm8.283 0a6.74 6.74 0 0 0-3.748-4.95c.54 1.34.895 3.05 1 4.95h2.748zm0 2.25h-2.748c-.105 1.9-.46 3.61-1 4.95a6.74 6.74 0 0 0 3.748-4.95zm-9.524-7.2a6.739 6.739 0 0 0-3.748 4.95h2.748c.105-1.9.46-3.61 1-4.95zm-1 7.2c.105 1.9.46 3.61 1 4.95a6.739 6.739 0 0 1-3.748-4.95h2.748zm5.535 0h-3.295c.187 3.112 1.107 5.01 1.647 5.533.542-.524 1.461-2.421 1.648-5.533zM15.75 4.5a9 9 0 1 1 0 18 9 9 0 0 1 0-18zm-9 27H27V27H6.75c-1.125 0-2.25.9-2.25 2.25s.9 2.25 2.25 2.25z"
       fill="#FF4F4F"></path>
@@ -25,19 +28,5 @@
   <symbol viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg" id="user-astronaut">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M5.45 15.75H4.5a1.128 1.128 0 0 1-1.125-1.125v-6.75c0-.619.506-1.125 1.125-1.125h.95C7.185 2.777 11.136 0 15.75 0s8.564 2.777 10.3 6.75H27c.619 0 1.125.506 1.125 1.125v6.75c0 .619-.506 1.125-1.125 1.125h-.95c-1.736 3.973-5.688 6.75-10.3 6.75-4.613 0-8.564-2.777-10.3-6.75zm5.237-9c-1.863 0-3.374 1.259-3.374 2.813v1.687a6.752 6.752 0 0 0 6.75 6.75h3.374a6.752 6.752 0 0 0 6.75-6.75V9.562c0-1.553-1.511-2.812-3.375-2.812H10.688zm1.688 7.875l.844-2.531 2.531-.844-2.531-.844-.844-2.531-.844 2.531L9 11.25l2.531.844.844 2.531zM15.75 24.75c2.686 0 5.182-.794 7.284-2.152 4.747.5 8.466 4.472 8.466 9.352v.675A3.376 3.376 0 0 1 28.125 36H22.5v-4.5a2.248 2.248 0 0 0-2.25-2.25h-9A2.248 2.248 0 0 0 9 31.5V36H3.375A3.376 3.376 0 0 1 0 32.625v-.675c0-4.88 3.72-8.852 8.466-9.352a13.382 13.382 0 0 0 7.284 2.152zm3.375 6.75c-.619 0-1.125.506-1.125 1.125s.506 1.125 1.125 1.125 1.125-.506 1.125-1.125-.506-1.125-1.125-1.125zm-7.875 1.125c0-.619.506-1.125 1.125-1.125s1.125.506 1.125 1.125V36h-2.25v-3.375z"
       fill="#FF4F4F"></path>
-  </symbol>
-  <symbol viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg" id="Triangle">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M40.056 24.028c3.685 1.843 3.685 7.102 0 8.944l-28.82 14.41C7.912 49.044 4 46.627 4 42.91V14.09c0-3.717 3.912-6.134 7.236-4.472l28.82 14.41z" fill="#fff" filter="url(#filter0_d)"></path>
-    <defs>
-      <filter id="filter0_d" x="0" y=".084" width="64.82" height="64.833" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-        <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
-        <feOffset dx="9" dy="4"></feOffset>
-        <feGaussianBlur stdDeviation="6.5"></feGaussianBlur>
-        <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.127868 0"></feColorMatrix>
-        <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"></feBlend>
-        <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"></feBlend>
-      </filter>
-    </defs>
   </symbol>
 </svg>

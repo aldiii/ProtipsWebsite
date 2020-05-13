@@ -4,6 +4,7 @@
   --primary-color: #ff4f4f;
   --secondary-color: #474bff;
   --dark-color: #262626;
+  --gray-color: #222222;
   --light-color: #ffffff;
   --primary-transparent: rgba(255, 79, 79, 0.15);
   --secondary-transparent: rgba(71, 75, 255, 0.15);
@@ -12,7 +13,7 @@
 
 body {
   background: linear-gradient(
-    90deg,
+    0deg,
     var(--secondary-transparent) 0%,
     var(--primary-transparent) 100%
   );
@@ -78,7 +79,7 @@ body {
   border: solid 1px var(--dark-color);
 }
 
-.btn--transparent {
+.btn--outline {
   background: none;
   border: solid 1px var(--light-color);
 }
@@ -87,9 +88,38 @@ body {
   background-color: var(--primary-color);
   font-weight: bold;
   padding: 15px 40px;
-  border: sol;
+  border: none;
 }
-
+.btn--light {
+  background-color: transparent;
+  color: var(--primary-color);
+  font-weight: bold;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  line-height: 30px;
+}
+.btn--light span {
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: solid 1px var(--primary-color);
+  margin-left: 10px;
+}
+.btn--light span::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  width: 1px;
+  height: 1px;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 6px 12px;
+  border-color: transparent transparent transparent var(--primary-color);
+}
 .btn--play {
   position: relative;
   width: 100px;
@@ -142,7 +172,6 @@ body {
   border-style: solid;
   border-width: 23px 43px;
   border-color: transparent white;
-  border-right: 22px violet;
 }
 
 .header-row {
@@ -177,7 +206,7 @@ body {
   flex-basis: 55%;
   background-image: url("../img/city.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -187,7 +216,7 @@ body {
   display: flex;
   justify-content: space-between;
   max-width: 1095px;
-  margin: 200px auto 0;
+  margin: 200px auto 77px;
 }
 .feautures__title {
   display: none;
@@ -229,4 +258,80 @@ body {
   font-size: 22px;
   line-height: 33px;
   color: var(--dark-color);
+}
+
+.about-us {
+  position: relative;
+  margin: 0 auto;
+  padding: 133px 0 97px 0;
+  background: linear-gradient(
+    180deg,
+    var(--light-transparent) 0%,
+    var(--primary-transparent) 100%
+  );
+}
+
+.about-us::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(../img/shape.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: bottom center;
+}
+
+.about-us__container {
+  max-width: 1095px;
+  display: flex;
+  margin: 0 auto;
+}
+.about-us__logo {
+  vertical-align: bottom;
+  margin-left: 10px;
+}
+.about-us__header {
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: normal;
+  margin: 0;
+}
+.about-us__subheader {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.about-us__list {
+  list-style-type: none;
+  font-size: 17px;
+  line-height: 168%;
+}
+
+.about-us__item {
+  position: relative;
+  vertical-align: bottom;
+  color: var(--gray-color);
+}
+
+.about-us__item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -35px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/check.svg");
+  background-repeat: no-repeat;
+}
+
+.about-us__btn-group {
+  margin-top: 60px;
+  margin-left: 0;
+  display: flex;
 }
