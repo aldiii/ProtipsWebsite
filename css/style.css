@@ -10,6 +10,11 @@
   --secondary-transparent: rgba(71, 75, 255, 0.15);
   --light-transparent: rgba(255, 255, 255, 0.19);
 }
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 
 body {
   background: linear-gradient(
@@ -481,6 +486,72 @@ body {
   padding: 5px;
 }
 .subscribe {
+  position: relative;
   margin: 50px auto;
+  padding: 100px 0;
   max-width: 1100px;
+  background-color: #ff4f4f;
+  background-image: url(../img/circles.png);
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  color: var(--light-color);
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.subscribe__form {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  margin: 0 auto;
+  width: 70%;
+}
+.subscribe__header {
+  font-size: 20px;
+  line-height: 150%;
+  width: 35%;
+}
+.subscribe__fieldset {
+  margin-left: auto;
+  border: 2px solid white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  width: 55%;
+}
+.subscribe__input {
+  background-color: transparent;
+  padding: 17px;
+  border: none;
+  color: inherit;
+  line-height: 24px;
+}
+.subscribe__input::placeholder {
+  color: inherit;
+  font-family: inherit;
+  font-size: 16px;
+  opacity: 1;
+}
+.subscribe__btn {
+  background-color: transparent;
+  border: none;
+  border-left: solid 1px white;
+  padding: 6px 20px;
+  margin: 6px 0;
+}
+
+.subscribe__btn .icon {
+  width: 34px;
+  height: 34px;
+  margin-left: auto;
 }
