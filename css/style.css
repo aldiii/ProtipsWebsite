@@ -18,7 +18,7 @@
 
 body {
   background: linear-gradient(
-    0deg,
+    45deg,
     var(--secondary-transparent) 0%,
     var(--primary-transparent) 100%
   );
