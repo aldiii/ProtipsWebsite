@@ -283,8 +283,8 @@ body {
   max-height: 80px;
 }
 .card__text {
-  font-size: 1.375rem;
-  line-height: 118%;
+  font-size: 1rem;
+  line-height: 162.5%;
   color: var(--dark-color);
 }
 
