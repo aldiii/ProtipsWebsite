@@ -23,6 +23,7 @@ body {
     var(--primary-transparent) 100%
   );
   font-family: "Poppins", sans-serif;
+  font-size: 100%;
   color: var(--dark-color);
 }
 
@@ -64,9 +65,23 @@ body {
   color: white;
 }
 .main-nav__link {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: inherit;
   text-decoration: none;
+}
+
+.main-nav__link::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 0px;
+  background-color: var(--light-color);
+  margin-top: 3px;
+  transition: 0.3s;
+}
+.main-nav__link:hover::after {
+  width: 100%;
+  height: 1px;
 }
 .main-nav__item--btn {
   margin-left: 50px;
@@ -74,7 +89,7 @@ body {
 .btn {
   padding: 10px 20px;
   border-radius: 4px;
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--light-color);
   cursor: pointer;
   box-shadow: none;
@@ -208,7 +223,7 @@ body {
   padding-right: 50px;
 }
 .header-left__heading {
-  font-size: 44px;
+  font-size: 2.75rem;
   line-height: 123%;
   font-weight: normal;
 }
@@ -218,7 +233,7 @@ body {
 }
 
 .header-left__text {
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 156%;
 }
 .header-right {
@@ -268,14 +283,14 @@ body {
   max-height: 80px;
 }
 .card__text {
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1.375rem;
+  line-height: 118%;
   color: var(--dark-color);
 }
 
 .card__title {
-  font-size: 22px;
-  line-height: 33px;
+  font-size: 1.375rem;
+  line-height: 150%;
   color: var(--dark-color);
 }
 
@@ -314,20 +329,20 @@ body {
   margin-left: 10px;
 }
 .about-us__header {
-  font-size: 17px;
-  line-height: 28px;
+  font-size: 1.0625rem;
+  line-height: 164.5%;
   font-weight: normal;
   margin: 0;
 }
 .about-us__subheader {
   font-weight: bold;
-  font-size: 40px;
-  line-height: 60px;
+  font-size: 2.5rem;
+  line-height: 150%;
 }
 
 .about-us__list {
   list-style-type: none;
-  font-size: 17px;
+  font-size: 1.0625rem;
   line-height: 168%;
 }
 
@@ -369,8 +384,8 @@ body {
 
 .section__subtitle {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1rem;
+  line-height: 162.5%;
   margin-bottom: 74px;
   text-align: center;
 }
@@ -381,20 +396,20 @@ body {
 
 .testimonial__name {
   font-weight: bold;
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 94%;
   margin: 10px 0;
 }
 .testimonial__position {
   font-weight: bold;
-  font-size: 14px;
-  line-height: 30px;
+  font-size: 0.875rem;
+  line-height: 214%;
   color: #ff4f4f;
   margin: 0;
 }
 
 .testimonial__text {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 187%;
   color: #2c4e8b;
   margin: 0 80px 80px;
@@ -429,15 +444,15 @@ body {
 }
 
 .our-story__p {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 198%;
 }
 
 .our-story__h3 {
   margin-bottom: 23px;
   font-weight: bold;
-  font-size: 26px;
-  line-height: 40px;
+  font-size: 1.625rem;
+  line-height: 154%;
 }
 
 .our-story__icon {
@@ -461,11 +476,11 @@ body {
 
 .post__title {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 142%;
 }
 .post__data {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 175%;
 }
 .post__author {
@@ -509,7 +524,7 @@ body {
   width: 70%;
 }
 .subscribe__header {
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 150%;
   width: 35%;
 }
@@ -531,7 +546,7 @@ body {
 .subscribe__input::placeholder {
   color: inherit;
   font-family: inherit;
-  font-size: 16px;
+  font-size: 1rem;
   opacity: 1;
 }
 .subscribe__btn {
@@ -565,7 +580,7 @@ body {
   padding: 75px 0 60px;
 }
 .footer__text {
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 156%;
 }
 .footer__info {
@@ -575,12 +590,12 @@ body {
   width: 12%;
 }
 .footer__heading {
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 150%;
   margin-top: 0;
 }
 .footer__links {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 218%;
   color: inherit;
   text-decoration: none;
@@ -594,7 +609,7 @@ footer__links:active {
 }
 .footer__copyright {
   text-align: center;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 250%;
   padding: 16px 0;
   margin: 0;
