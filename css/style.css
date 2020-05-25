@@ -37,6 +37,7 @@ body {
   background-image: url("../img/header-shape.svg");
   background-repeat: no-repeat;
   background-position: top right;
+  background-size: contain;
 }
 
 .main-nav {
@@ -252,13 +253,16 @@ body {
   max-width: 1095px;
   margin: 200px auto 77px;
 }
+
 .feautures__title {
   display: none;
 }
 
 .card {
-  margin-right: 20px;
-  width: 20%;
+  flex: 20%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
 .card__icon {
   margin: 0;
@@ -315,8 +319,8 @@ body {
   height: 95px;
   background: url(../img/shape.svg);
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 100% 100%;
+  background-size: cover;
+  background-position: bottom center;
 }
 
 .about-us__container {
@@ -344,6 +348,7 @@ body {
   list-style-type: none;
   font-size: 1.0625rem;
   line-height: 168%;
+  text-align: left;
 }
 
 .about-us__item {
@@ -376,7 +381,7 @@ body {
 }
 .section__title {
   font-weight: bold;
-  font-size: 34px;
+  font-size: 2.125rem;
   line-height: 51px;
   margin-bottom: 0;
   text-align: center;
@@ -521,7 +526,7 @@ body {
   align-items: center;
   background: transparent;
   margin: 0 auto;
-  width: 70%;
+  width: 75%;
 }
 .subscribe__header {
   font-size: 1.25rem;
@@ -542,7 +547,9 @@ body {
   border: none;
   color: inherit;
   line-height: 24px;
+  max-width: 85%;
 }
+
 .subscribe__input::placeholder {
   color: inherit;
   font-family: inherit;
@@ -553,7 +560,7 @@ body {
   background-color: transparent;
   border: none;
   border-left: solid 2px white;
-  padding: 6px 20px;
+  width: 100%;
   margin: 6px 0;
   transition: 0.3s;
 }
@@ -584,10 +591,12 @@ body {
   line-height: 156%;
 }
 .footer__info {
-  width: 35%;
+  flex: 35%;
+  padding: 0 2%;
 }
 .footer__col {
-  width: 12%;
+  flex: 12%;
+  padding: 0 2%;
 }
 .footer__heading {
   font-size: 1.25rem;
@@ -603,7 +612,7 @@ body {
   transition: 0.3s;
 }
 .footer__links:hover,
-footer__links:active {
+.footer__links:active {
   color: var(--primary-color);
   text-decoration: underline;
 }
@@ -623,4 +632,206 @@ footer__links:active {
 .author:hover,
 .author:active {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1120px) {
+  .header-row,
+  .our-story,
+  .footer {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .about-us__figure img {
+    max-width: 100%;
+    height: auto;
+  }
+  .about-us__right {
+    min-width: 50%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header-left {
+    padding: 2% 2% 2% 0;
+    flex-basis: 55%;
+  }
+  .header-right {
+    flex-basis: 45%;
+    margin: 2% 0;
+  }
+  .header-left__heading {
+    font-size: 2.5rem;
+  }
+  .btn {
+    font-size: 0.9rem;
+  }
+
+  .btn--primary {
+    padding: 15px 30px;
+  }
+
+  .feautures {
+    flex-wrap: wrap;
+    margin: 150px auto 0px;
+  }
+  .card {
+    flex: 40%;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .testimonial {
+    margin: 90px auto;
+  }
+
+  .our-story__cards {
+    margin: 0 2%;
+  }
+  .our-story__card {
+    width: 48%;
+  }
+
+  .subscribe {
+    border-radius: 0;
+  }
+
+  .subscribe__form {
+    width: 85%;
+  }
+
+  .subscribe__btn .icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .footer__cols {
+    flex-wrap: wrap;
+  }
+  .footer__col {
+    flex: 1 0 30%;
+  }
+  .footer__info {
+    flex: 100%;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header-row {
+    flex-direction: column-reverse;
+  }
+  .header-right .btn--play {
+    margin: 25vw 0;
+  }
+  .header-left {
+    text-align: center;
+  }
+
+  .header-left__text {
+    text-align: justify;
+    text-align-last: center;
+  }
+  .feautures {
+    margin: 120px auto 0px;
+  }
+  .about-us {
+    text-align: center;
+    padding: 90px 0;
+  }
+  .about-us__container {
+    flex-direction: column;
+  }
+  .about-us__right {
+    margin: auto;
+  }
+
+  .about-us__btn-group {
+    justify-content: center;
+  }
+
+  .our-story__cards {
+    flex-direction: column;
+  }
+  .our-story__card {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .feautures {
+    flex-direction: column;
+    margin: 90px auto 0px;
+  }
+
+  .about-us {
+    padding: 50px 0;
+  }
+
+  .subscribe__form {
+    flex-direction: column;
+    width: 90%;
+  }
+  .subscribe__header {
+    width: 96%;
+    text-align: center;
+  }
+  .subscribe__fieldset {
+    width: 90%;
+    margin: auto;
+  }
+  .subscribe__header {
+    margin-bottom: 30px;
+  }
+
+  .footer__cols {
+    flex-direction: column;
+  }
+  .footer__col {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .header-left__heading {
+    font-size: 2.2rem;
+  }
+
+  .about-us__subheader,
+  .section__title {
+    font-size: 2rem;
+  }
+  .about-us__right {
+    margin: 0 2%;
+  }
+
+  .about-us__btn-group {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-us__btn-group .btn {
+    min-width: 70%;
+    margin-bottom: 20px;
+  }
+
+  .our-story__card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .our-story__text,
+  fo {
+    text-align: justify;
+    text-align-last: center;
+  }
+  .subscribe__btn .icon {
+    width: 20px;
+    height: 20px;
+  }
 }
