@@ -453,7 +453,13 @@ body {
   margin-bottom: 74px;
   text-align: center;
 }
-
+.testimonial__carousel {
+  display: flex;
+  overflow: hidden;
+}
+.testimonial__slide {
+  flex: 1 0 100%;
+}
 .testimonial__img {
   border-radius: 5px;
 }
