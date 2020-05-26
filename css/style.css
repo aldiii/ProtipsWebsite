@@ -97,7 +97,8 @@ body {
   border: none;
   transition: 0.3s;
 }
-.btn:hover {
+.btn:hover,
+.btn--burger:hover {
   transform: scale(1.15);
 }
 .btn--dark {
@@ -150,6 +151,56 @@ body {
   border-width: 6px 12px;
   border-color: transparent transparent transparent var(--primary-color);
 }
+.btn--burger {
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--light-color);
+  border-radius: 4px;
+  box-shadow: none;
+  padding: 5px;
+  background: transparent;
+  position: relative;
+  transition: 0.2s linear;
+}
+.btn--burger span,
+.btn--burger::after,
+.btn--burger::before {
+  width: 70%;
+  height: 2px;
+  position: absolute;
+  background-color: var(--light-color);
+  left: 15%;
+  opacity: 1;
+  transition: top 0.1s 0.1s linear, translate 0.2s 0.3s, opacity 0.2s 0.1s;
+}
+.btn--burger.acitve {
+  transform: rotate(90deg);
+}
+.btn--burger::after,
+.btn--burger::before {
+  content: "";
+}
+.btn--burger::after {
+  top: 25%;
+}
+.btn--burger::before {
+  top: calc(75% - 1px);
+}
+.btn-burger span,
+.btn--burger.active::after,
+.btn--burger.active::before {
+  top: calc(50% - 1px);
+}
+.btn--burger.active::after {
+  transform: rotate(45deg);
+}
+.btn--burger.active::before {
+  transform: rotate(-45deg);
+}
+.btn--burger.active span {
+  opacity: 0;
+}
+
 .btn--play {
   position: relative;
   width: 100px;
