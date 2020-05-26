@@ -453,9 +453,12 @@ body {
   margin-bottom: 74px;
   text-align: center;
 }
+.testimonial__carousel-wrapper {
+  overflow: hidden;
+}
 .testimonial__carousel {
   display: flex;
-  overflow: hidden;
+  transition: all 0.7s ease-in-out 0.3s;
 }
 .testimonial__slide {
   flex: 1 0 100%;
@@ -625,7 +628,7 @@ body {
   background-color: transparent;
   border: none;
   border-left: solid 2px white;
-  width: 100%;
+  width: 50%;
   margin: 6px 0;
   transition: 0.3s;
 }
