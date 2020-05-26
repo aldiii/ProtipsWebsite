@@ -84,9 +84,16 @@ body {
   width: 100%;
   height: 1px;
 }
-.main-nav__item--btn {
+
+.btn-nav {
   margin-left: 50px;
+  display: flex;
+  flex-wrap: nowrap;
 }
+.btn-nav button {
+  margin-left: 15px;
+}
+
 .btn {
   padding: 10px 20px;
   border-radius: 4px;
@@ -161,6 +168,7 @@ body {
   background: transparent;
   position: relative;
   transition: 0.2s linear;
+  display: none;
 }
 .btn--burger span,
 .btn--burger::after,
@@ -774,6 +782,25 @@ body {
 }
 
 @media screen and (max-width: 700px) {
+  .main-nav {
+    flex-wrap: wrap;
+  }
+  .main-nav__list {
+    order: 1;
+    flex-direction: column;
+    flex: 1 1 100%;
+    background: transparent;
+    display: none;
+  }
+  .main-nav__list.active {
+    display: flex;
+  }
+  .btn-nav {
+    margin-left: auto;
+  }
+  .btn--burger {
+    display: block;
+  }
   .header-row {
     flex-direction: column-reverse;
   }
