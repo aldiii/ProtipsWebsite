@@ -876,6 +876,25 @@ body {
   }
 }
 
+@media screen and (max-width: 450px) {
+  .header {
+    background: none;
+  }
+  .main-nav {
+    background-color: var(--primary-color);
+    padding: 15px;
+  }
+  .main-nav__logo {
+    width: 70px;
+  }
+
+  .btn-nav {
+  }
+  .btn-nav button {
+    padding: 7px;
+    margin-left: 5px;
+  }
+}
 @media screen and (max-width: 360px) {
   .header-left__heading {
     font-size: 2.2rem;
