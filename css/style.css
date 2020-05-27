@@ -453,7 +453,8 @@ body {
   margin-bottom: 74px;
   text-align: center;
 }
-.testimonial__carousel-wrapper {
+.testimonial__carousel-wrapper,
+.carousel-wrapper {
   overflow: hidden;
 }
 .testimonial__carousel {
@@ -532,19 +533,26 @@ body {
   padding-right: 24px;
 }
 
-.posts {
+.posts__carousel-wrapper {
   max-width: 1100px;
+  margin: 0 auto 45px;
+}
+.posts__carousel {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto 45px;
 }
 
 .post {
-  width: 32%;
+  flex: 1 0 31.3%;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 .post__img {
   border-radius: 8px 8px 0px 0px;
+  max-width: 100%;
+  height: auto;
 }
 
 .post__title {
@@ -789,7 +797,16 @@ body {
     padding-bottom: 20px;
   }
 }
-
+@media screen and (max-width: 800px) {
+  .post {
+    flex: 1 0 46%;
+    margin: 0 2%;
+    text-align: center;
+  }
+  .post__title {
+    font-size: 1.375rem;
+  }
+}
 @media screen and (max-width: 700px) {
   .main-nav {
     flex-wrap: wrap;
@@ -860,7 +877,9 @@ body {
   .about-us {
     padding: 50px 0;
   }
-
+  .post__title {
+    font-size: 1.2rem;
+  }
   .subscribe__form {
     flex-direction: column;
     width: 90%;
@@ -897,11 +916,14 @@ body {
     width: 70px;
   }
 
-  .btn-nav {
-  }
   .btn-nav button {
     padding: 7px;
     margin-left: 5px;
+  }
+
+  .post {
+    flex: 1 0 90%;
+    margin: 0 5%;
   }
 }
 @media screen and (max-width: 360px) {
@@ -935,6 +957,11 @@ body {
   fo {
     text-align: justify;
     text-align-last: center;
+  }
+
+  ..post {
+    flex: 1 0 96%;
+    margin: 0 2%;
   }
   .subscribe__btn .icon {
     width: 20px;

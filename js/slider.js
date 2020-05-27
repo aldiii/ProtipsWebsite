@@ -6,11 +6,11 @@ class Slider {
     this.auto = auto;
     this.intervalTime = intervalTime;
     this.slideInterval;
+    this.currentSlide = 0;
     this.slideCount = Math.ceil(
       (this.carousel.offsetWidth / this.items[0].offsetWidth) *
         this.items.length
     );
-    this.currentSlide = 0;
     this.generateDots(this.slideCount);
     if (auto) this.runSlider();
   }
@@ -44,12 +44,12 @@ class Slider {
   }
   goToSlide(e) {
     if (this.slideInterval) clearInterval(this.slideInterval);
-    let slide = e.target.id * 1;
+    const slide = e.target.id * 1;
     this.moveSlide(slide);
     if (this.auto) this.runSlider();
   }
   nextSlide() {
-    let slide =
+    const slide =
       this.currentSlide < this.slideCount - 1 ? this.currentSlide + 1 : 0;
     this.moveSlide(slide);
   }
