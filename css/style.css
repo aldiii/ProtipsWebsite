@@ -457,7 +457,8 @@ body {
 .carousel-wrapper {
   overflow: hidden;
 }
-.testimonial__carousel {
+.testimonial__carousel,
+.posts__carousel {
   display: flex;
   transition: all 0.7s ease-in-out 0.3s;
 }
@@ -959,7 +960,7 @@ body {
     text-align-last: center;
   }
 
-  ..post {
+  .post {
     flex: 1 0 96%;
     margin: 0 2%;
   }

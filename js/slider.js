@@ -7,16 +7,31 @@ class Slider {
     this.intervalTime = intervalTime;
     this.slideInterval;
     this.currentSlide = 0;
-    this.slideCount = Math.ceil(
-      (this.carousel.offsetWidth / this.items[0].offsetWidth) *
-        this.items.length
-    );
-    this.generateDots(this.slideCount);
+    window.onresize = this.generateDots.bind(this);
+
+    if (sectionName == "posts") {
+      console.log(
+        this.carousel.offsetWidth,
+        this.items[0].offsetWidth,
+        this.items.length,
+        this.slideCount
+      );
+    }
+
+    this.generateDots();
     if (auto) this.runSlider();
   }
+  setSlideCount() {
+    this.slideCount = Math.ceil(
+      this.items.length /
+        (this.carousel.offsetWidth / this.items[0].offsetWidth)
+    );
+  }
 
-  generateDots(count) {
-    for (let i = 0; i < count; ++i) {
+  generateDots() {
+    this.setSlideCount();
+    this.dots.innerHTML = "";
+    for (let i = 0; i < this.slideCount; ++i) {
       const dot = document.createElement("span");
       dot.id = i;
       dot.classList.add("dot");
@@ -56,3 +71,4 @@ class Slider {
 }
 
 const testimonialSlider = new Slider("testimonial");
+const postsSlider = new Slider("posts");
