@@ -9,15 +9,6 @@ class Slider {
     this.currentSlide = 0;
     window.onresize = this.generateDots.bind(this);
 
-    if (sectionName == "posts") {
-      console.log(
-        this.carousel.offsetWidth,
-        this.items[0].offsetWidth,
-        this.items.length,
-        this.slideCount
-      );
-    }
-
     this.generateDots();
     if (auto) this.runSlider();
   }

@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Landing page of a fictional company Protips">
   <link rel="stylesheet" href="./css/normalize.css" />
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./css/style.css" />
@@ -33,7 +34,7 @@
         <div class="btn-nav">
           <button class="btn btn--dark">Sign Up</button>
           <button class="btn btn--outline">Sign In</button>
-          <button class="btn--burger"><span></span></button>
+          <button aria-label="open menu" class="btn--burger"><span></span></button>
         </div>
       </nav>
       <div class="header-row">
@@ -49,12 +50,12 @@
           <button class="btn btn--primary">Get started</button>
         </div>
         <div class="header-right">
-          <button class="btn--play"><span></span></button>
+          <button aria-label="play video" class="btn--play"><span></span></button>
         </div>
       </div>
     </header>
     <section class="feautures" id="feautures">
-      <h2 class="feautures__title">Feautures</h2>
+      <h2 class="feautures__title .sr-only">Feautures</h2>
       <div class="card">
         <div class="card__icon">
           <svg class="icon">
@@ -240,7 +241,7 @@
         <div class="subscribe__fieldset" >
           <label for="email" class="subscribe__label visuallyhidden">Enter your email:</label>
           <input type="email" name="email" id="email" placeholder="Enter your email:"required class="subscribe__input" >
-          <button type="submit"  class="subscribe__btn" > <svg class="icon">
+          <button type="submit"  class="subscribe__btn" aria-label="subscribe to our newsletter"> <svg class="icon">
             <use xlink:href="./img/sprite.svg#send-email"></use>
           </svg></button>
         </div>
