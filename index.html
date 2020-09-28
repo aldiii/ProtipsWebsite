@@ -38,7 +38,7 @@
         </div>
       </nav>
       <div class="header-row">
-        <div class="header-left">
+        <div class="header-left animated slide-in-left">
           <h1 class="header-left__heading">
             A Guide To <span>Rocky</span> Mountain Vacations
           </h1>
@@ -49,12 +49,12 @@
           </p>
           <button class="btn btn--primary">Get started</button>
         </div>
-        <div class="header-right">
+        <div class="header-right animated fade-in">
           <button aria-label="play video" class="btn--play"><span></span></button>
         </div>
       </div>
     </header>
-    <section class="feautures" id="feautures">
+    <section class="feautures animated-on-scroll slide-in-right" id="feautures">
       <h2 class="feautures__title .sr-only">Feautures</h2>
       <div class="card">
         <div class="card__icon">
@@ -97,7 +97,7 @@
         </p>
       </div>
     </section>
-    <section id="about" class="about-us">
+    <section id="about" class="about-us  about-us__btn-group animated-on-scroll slide-in-left">
       <div class="about-us__container">
         <figure class="about-us__figure">
           <img src="./img/about-us.png" alt="" class="about-us__img" />
@@ -129,7 +129,7 @@
         </div>
       </div>
     </section>
-    <section class="testimonial ">
+    <section class="testimonial animated-on-scroll fade-in">
       <h2 class="section__title">Testimonial</h2>
       <p class="section__subtitle">Vampires The Romantic Ideology Behind Them</p>
       <div class="testimonial__carousel-wrapper carousel-wrapper">
@@ -158,7 +158,7 @@
         
       </div>
     </section>
-    <section class="our-story">
+    <section class="our-story animated-on-scroll slide-in-right">
       <h2 class="section__title">Our story</h2>
       <p class="section__subtitle">Vampires The Romantic Ideology Behind Them</p>
       <div class="our-story__cards">
@@ -194,7 +194,7 @@
       </div>
     </section>
   
-    <aside class="recent-posts" id="blog">
+    <aside class="recent-posts animated-on-scroll fade-in" id="blog">
       <h2 class="section__title">Our Recent Post</h2>
       <p class="section__subtitle">Vampires The Romantic Ideology Behind Them</p>
       <div class="posts__carousel-wrapper carousel-wrapper">
@@ -229,13 +229,18 @@
           <h3 class="post__title">The Universe Through A Child S Eyes</h3>
           <p class="post__data">By <a class="post__author" href="#" rel="author">Speed Smith</a><time pubdate datetime="2019-02-08">08 Feb 2019</time> </p>
         </article>
+        <article class="posts__slide post">
+          <img src="./img/island.png" alt="island" class="post__img">
+          <h3 class="post__title">The Universe Through A Child S Eyes</h3>
+          <p class="post__data">By <a class="post__author" href="#" rel="author">Speed Smith</a><time pubdate datetime="2019-02-08">08 Feb 2019</time> </p>
+        </article>
       </div>
       </div>
       <div class="dots posts__dots">
       </div>
     </section>
   
-    <section class="subscribe">
+    <section class="subscribe animated-on-scroll fade-in">
       <form type="submit" action="" class="subscribe__form">
         <h3 class="subscribe__header">Get Update Protips every newsletter</h3>
         <div class="subscribe__fieldset" >
@@ -249,7 +254,7 @@
       </form>
     </section>
   </main>
-    <footer class="footer">
+    <footer class="footer animated-on-scroll slide-in-left">
       <div class="footer__cols">
         <div class="footer__info">
           <img src="./img/Logo.png" alt="Protips Logo" class="footer__logo">
@@ -281,6 +286,7 @@
     </footer>
     <script src="./js/menu.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./scroll-animations.js"></script>
   </div>
 
 </body>
