@@ -2,14 +2,9 @@ const scrollOffset = 100;
 
 const scrollElements = document.querySelectorAll(".animated-on-scroll");
 
+//check if element is in view
 const elementInView = (el) => {
   const elTop = el.getBoundingClientRect().top;
-  if (
-    elTop <=
-    (window.innerHeight || document.documentElement.clientHeight) - scrollOffset
-  ) {
-    console.log(el, "scrolled");
-  }
   return (
     elTop <=
     (window.innerHeight || document.documentElement.clientHeight) - scrollOffset
