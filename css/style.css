@@ -711,6 +711,29 @@ body {
   text-decoration: underline;
 }
 
+.btn--scroll-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 10;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  border: none;
+  transition: 0.3s;
+  opacity: 0;
+}
+.btn--scroll-top.active {
+  opacity: 1;
+}
+.btn--scroll-top svg {
+  fill: var(--light-color);
+}
+.btn--scroll-top:hover {
+  transform: scale(1.1);
+}
+
 /*Animacje */
 .animated.slide-in-right,
 .scrolled.slide-in-right {

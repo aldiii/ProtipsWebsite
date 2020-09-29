@@ -1,5 +1,5 @@
 const menuLinks = document.querySelectorAll(".main-nav__link, .footer__links");
-console.log(menuLinks);
+
 const clickHandler = (e) => {
   e.preventDefault();
   const destination = e.target.getAttribute("href");
