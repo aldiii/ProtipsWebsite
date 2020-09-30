@@ -306,17 +306,21 @@ body {
   align-items: center;
 }
 
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .feautures {
   display: flex;
   justify-content: space-between;
   max-width: 1095px;
   margin: 200px auto 77px;
 }
-
-.feautures__title {
-  display: none;
-}
-
 .card {
   flex: 20%;
   display: flex;
